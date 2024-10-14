@@ -12,5 +12,3 @@ function updateProgressBar() {
     const scrolled = (scrollPosition / windowHeight) * 100;
     bar.style.width = scrolled + '%';
 }
-
-

@@ -1,0 +1,14 @@
+.quote{
+    background-color: #f0ead2;
+    display: flex;
+    justify-content: space-between;
+}
+.left{
+    border: 2px solid red;
+    width: 50%;
+    height: 30vh;
+    font-size: 1.001rem;
+}
+.lefty{
+    border: 2px solid purple;
+}

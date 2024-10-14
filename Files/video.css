@@ -24,3 +24,73 @@ nav{
     height: 100.6vh;
     z-index: 0;
 }   
+.text-onVid-con{
+    display: flex;
+    justify-content: start;
+    align-items: end;
+    height: 65vh;
+}
+.h1-con{
+    color: whitesmoke;
+    font-size: 5rem;
+    margin-left: 7%;
+}
+/* Headings */
+.header{
+    line-height: 1;
+    margin: 0;
+    font-size: 5.5rem;
+    color: #E5E5E5;
+    animation: slider 1s;
+}
+.headings_div{
+    width: fit-content;
+    text-align: center;
+    position: absolute;
+    top: 45%;
+    left: 6%;
+}
+/* Animation */
+@keyframes slider {
+    from {
+        transform: translateX(-120%);
+    }
+}
+/* Indiviual Headings Editing */
+#header0{
+    text-align: start;
+}
+#header1{
+    animation: slider 1.2s;
+    text-align: start;
+}
+#header2{
+    text-align: start;
+    animation: slider 1.4s
+}
+/* Button */
+.btn_div{
+    width: fit-content;
+    position: absolute;
+    top: 690px;
+    left: 1500px;
+}
+.btn{
+    border-radius: 100px;
+    padding: 15px;
+    font-size: 1.4rem;
+    color: #e5e7e9;
+    background-color: #25374500;
+    border: 2px solid #ccd0cf;
+    width: 170%;
+    transition: width 0.6s;
+    background-color: #11212d00;
+}
+    /* Button Effect */
+.btn:hover{
+    width: 240%;
+    cursor: pointer;
+    color: #14213D;
+    background-color: #e5e7e9;
+    transition: 0.6s;
+}
