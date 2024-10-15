@@ -1,14 +1,20 @@
 .quote{
-    background-color: #f0ead2;
+    background-color: #e5e5e5;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    gap: 20%;
+    height: 45vh;
+    padding: 5%;
+    padding-top: 8%;
 }
-.left{
-    border: 2px solid red;
-    width: 50%;
-    height: 30vh;
-    font-size: 1.001rem;
+.king-con{
+    border-right: 5px outset black;
+    border-bottom: 5px outset black;
+    height: 43vh;
+    padding-right: 1%;
 }
-.lefty{
-    border: 2px solid purple;
+.quote-h1{
+    width: 40%;
+    height: 24vh;
+    padding: 2%;
 }

@@ -131,6 +131,7 @@ nav {
 }
 .lang-con:active{
     filter: invert(40%);
+    transition: 0s;
 }
 .left-side{
     width: 70%;
