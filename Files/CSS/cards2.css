@@ -1,0 +1,32 @@
+.cards-con1{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 5%;
+}
+.card{
+    background-color: aliceblue;
+    width: 20%;
+    border-radius: 18px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center; 
+    height: 40vh;
+    border: 3px solid black;  
+    transition: .6s;
+ 
+}
+.card:hover{
+    padding: 1%;
+}
+.head-con{
+    display: flex;
+    width: 80%;
+    justify-content: center;
+    border-bottom: 2px solid black
+}
+.p-con1{
+    display: flex;
+    width: 80%;
+    justify-content: center;
+}

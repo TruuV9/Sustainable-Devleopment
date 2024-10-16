@@ -1,0 +1,54 @@
+.quote{
+    background-color: #e5e5e5;
+    display: flex;
+    justify-content: center;
+    gap: 20%;
+    height: 45vh;
+    padding: 5%;
+    padding-top: 8%;
+}
+.king-con{
+    border-right: 5px outset black;
+    border-bottom: 5px outset black;
+    height: 45vh;
+    padding-right: 1%;
+}
+
+.quote-h1{
+    width: 40%;
+    height: 24vh;
+    padding: 2%;
+} 
+ .king-con1{
+    background-color: blanchedalmond;
+    width: 50%;
+    height: 66vh;
+    padding-left: 2%;
+    padding-right: 2%;
+    padding-top: 2%;
+}
+.img-con{
+    width: 100%;
+    display: flex;
+    justify-content: end;
+}
+.leftTest{
+    background-color: thistle;
+    width: 50%;
+    height: 70vh;
+}
+.quote1{
+    display: flex;
+}
+.head-con{
+    width: 60%;
+    position: relative;
+    left: 10%;
+    transform: translateY(10%);
+}
+.king-con1 img{
+    filter: drop-shadow(5px 5px 10px rgb(68, 68, 68));
+    border-right: 5px solid black;
+    border-bottom: 5px solid black;
+    padding: 2%;
+}

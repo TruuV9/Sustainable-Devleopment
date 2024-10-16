@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+    <link rel="stylesheet" href="/Files/CSS/nav.css">
+    <link rel="stylesheet" href="/Files/CSS/question.css">
+    <link rel="stylesheet" href="/Files/CSS/cards2.css">
+    <link rel="stylesheet" href="/Files/CSS/cards.css">
+    <link rel="stylesheet" href="/Files/CSS/footer.css">
+    <link rel="icon" href="/img/logo2.png" type="image/x-icon">
+
+</head>
+<body>
+    
+    <nav id="nav">
+        <div class="logo-con">
+            <div class="main-logo">
+                <a href="main.html"><img src="/img/logo2.png" alt="logo" width="80px"></a>
+            </div>
+            <section class="divder">
+                <div></div>
+            </section>
+            <div class="a2030-logo">
+                <img src="https://neom.directory/images/vision-2030-logo.png" alt="2030 logo" width="90px">
+            </div>
+        </div>
+        <div class="nav-content">
+            <ul>
+                <li><a href="/Files/HTML/main.html"><b>Home</b></a></li>
+                <li id="pros" class="pro-con">
+                    <a href="/Files/HTML/main.html"><b>Projects</b></a>
+                    <i class="arrow right"></i>
+                </li>
+                <li><a href="/Files/HTML/secondary.html"><b>Quiz</b></a></li>
+                <li><a href="##"><b>About us</b></a></li>
+                <li><a href="##"><b>Support</b></a></li>
+            </ul>
+        </div>
+        <div class="nav-side">
+            <div class="left-side">
+                <button id="btn1" class="button2">Sign in</button>
+                <button id="btn2" class="button2">Log in</button>
+            </div>
+            <div class="right-side">
+                <div class="lang-con">
+                    <a href="##">
+                        <img src="/img/language.svg" alt="Language Icon" width="35px">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- Progress Bar -->
+    <section id="progress-con">
+        <div></div>
+     </section>
+    <!-- Under nav -->
+     <!-- <section class="underNav"></section> -->
+
+     <section class="form-con">
+        <div class="flashcard">
+          <div class="p-con">
+            <p class="question" id="questions"></p>
+          </div>
+          <div class="button-container" id="buttons">
+            <button onclick="submitAnswer(0)" id="never" class="yes-button" data-value="0">Never</button>
+            <button onclick="submitAnswer(1)" id="rarely" class="yes-button" data-value="1">Rarely</button>
+            <button onclick="submitAnswer(2)" id="sometimes" class="yes-button" data-value="2">Sometimes</button>
+            <button onclick="submitAnswer(3)" id="often" class="yes-button" data-value="3">Often</button>
+            <button onclick="submitAnswer(4)" id="always" class="yes-button" data-value="4">Always</button>
+          </div>
+          <p id="score" style="display: none;"></p>
+        </div>
+      </section>
+
+      <section class="result-con">
+        <h1 style="padding-left: 5%; padding-top: 2%; font-size: 2rem; color: white;">What your result say about you:</h1>
+        <section class="hr_con">
+            <div class="hr"></div>
+          </section>
+        <div class="cards-con1">
+            <div style="background: rgb(40,195,34); background: linear-gradient(0deg, rgba(40,195,34,1) 0%, rgba(45,253,79,1) 100%);" class="card">
+                <div class="head-con">
+                    <h1>20-15</h1>
+                </div>
+                <div class="p-con1">
+                    <p>Fantastic job! You're actively making a positive impact. Your consistent habits, like energy-saving and waste reduction, show your dedication to sustainability.
+                        Improvement: Try taking your efforts further by reducing plastic usage even more or helping others develop sustainable habits.</p>
+                </div>
+            </div>
+            <div style="background: rgb(159,195,34); background: linear-gradient(0deg, rgba(159,195,34,1) 0%, rgba(161,253,45,1) 100%);" class="card">
+                <div class="head-con">
+                    <h1>14-10</h1>
+                </div>
+                <div class="p-con1">
+                    <p>You're doing well with habits like conserving water and recycling regularly. Keep up the good work!
+                        Improvement: Consider focusing on energy efficiency by turning off appliances when not in use or looking for ways to cut down on plastic usage.</p>
+                </div>
+            </div>
+            <div style="background: rgb(195,163,34); background: linear-gradient(0deg, rgba(195,163,34,1) 0%, rgba(253,219,45,1) 100%);" class="card">
+                <div class="head-con">
+                    <h1>9-5</h1>
+                </div>
+                <div class="p-con1">
+                    <p>You’re off to a good start with some sustainable habits, such as reducing waste when possible.
+                        Improvement: Make a plan to conserve more energy, and look into ways to reduce plastic in your daily life, like using reusable bags and bottles.</p>
+                </div>
+            </div>
+            <div style="background: rgb(195,55,34); background: linear-gradient(0deg, rgba(195,55,34,1) 0%, rgba(253,69,45,1) 100%);" class="card">
+                <div class="head-con">
+                    <h1>4-0</h1>
+                </div>
+                <div class="p-con1">
+                    <p>It’s great that you’re beginning to think about sustainability!
+                        Improvement: Consider simple steps to start: save energy by turning off lights, reduce plastic use by avoiding single-use items, and aim to recycle. Small changes can have a big impact</p>
+                </div>
+            </div>
+        </div>
+      </section>
+      <footer>
+        <section class="foot">
+            <div class="img">
+                <img id="logo" src="/img/logo2.png">
+        <div class="a2030-logo">
+            <img style="position: relative; bottom: 220px;" id="a2030" src="/img/2030.png">
+        </div>
+    </div>
+            </div>
+            <div class="center">
+    <div class="form-container">
+          <form class="form">
+            <div class="form-group">
+              <label for="email">Company Email</label>
+              <input type="text" id="email" name="email" required="">
+            </div>
+            <div class="form-group">
+              <label for="textarea">How Can We Help You?</label>
+              <textarea name="textarea" id="textarea" rows="10" cols="50" required="">          </textarea>
+            </div>
+            <button class="form-submit-btn" type="submit">Submit</button>
+          </form>
+        </div>
+                <ul id="help">
+                 <li><h1>privacy policy</h1></li>
+                 <li><h1 id="border">contact us</h1></li>
+                 <li><h1>help and support</h1></li>
+                </ul>
+            </div>
+                <div class="lists">
+                    <ul class="supp">
+                        <div class="supp1">
+                            <li><img src="/img/kfupm.png" alt=""></li>
+                            <li><img id="sdaia" src="/img/SDAIA.svg.png" width="180px"></li>
+                            <li><img id="aramco" src="/img/saudi-aramco-thumb.png" width="330px"></li>
+                        </div>
+                        <div class="supp1">
+                            <li><img src="/img/ksu.png" width="100px"></li>
+                            <li><img src="/img/maaden.png" width="110px"></li>
+                            <li><img id="sabic" src="/img/sabic.png" width="150px"></li>
+                        </div>
+             </ul>
+            </div>
+        </section>
+        <div id="copyright">
+            <h4>جميع الحقوق محفوظة المملكة العربية السعودية © 1445هـ - 2024م.</h4>
+        </div>
+      
+    </footer>
+     <script src="/Files/JS/scrolling.js"></script>
+     <script src="/Files/JS/question.js"></script>
+</body>
+</html>

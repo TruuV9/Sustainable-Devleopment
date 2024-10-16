@@ -1,0 +1,152 @@
+.form-con {
+    width: 100%;
+    position: relative;
+    background-image: url('https://images.ctfassets.net/vy53kjqs34an/7Ftd00GRvKgiDQNcxGWiNN/80a0b3a0870a25321a3977f8ce108f83/1280_x_1280_px.jpg?w=1200&h=800&fit=thumb');
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 0;
+    color: white;
+}
+
+.form-con::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.463);
+    z-index: 1;
+}
+
+.form-con-content {
+    position: relative;
+    z-index: 2; 
+    padding: 20px;
+    color: white;
+}
+
+.flashcard {
+    background-color: #136a8f;
+    border: 2px solid #189AB4;
+    border-radius: 10px;
+    padding: 25px;
+    width: 55%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 40vh;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.557);
+    text-align: center;
+}
+.form-con{
+    padding-top: 10%;
+    padding-bottom: 10%;
+    display: flex;
+    justify-content: center;
+}
+.form-con::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0%;
+    left: 0%;
+    background-color: rgba(0, 0, 0, 0.463);
+    z-index: -1;
+}
+.question {
+    margin-bottom: 20px;
+    font-size: 20px;
+    width: 90%;
+}
+.p-con{
+    display: flex;
+    justify-content: center;
+}
+.button-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+button {
+    background-color: #4CAF50; 
+    opacity: 1;
+    border: none;
+    color: white;
+    padding: 10px 35px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.1s ease;
+}
+/* Always */
+#always {
+    background-color: #4CAF50;
+}
+#always:hover {
+    background-color: #43a047;
+}
+#always:active {
+    background-color: #388e3c;
+    transition: 0s;
+}
+
+/* Often */
+#often {
+    background-color: #8BC34A;
+}
+#often:hover {
+    background-color: #7cb342;
+}
+#often:active {
+    background-color: #689f38;
+    transition: 0s;
+}
+
+/* Sometimes */
+#sometimes {
+    background-color: #c0ca33;
+}
+#sometimes:hover {
+    background-color: #b7c12e;
+}
+#sometimes:active {
+    background-color: #afb42b;
+    transition: 0s;
+}
+
+/* Rarely */
+#rarely {
+    background-color: #FFC107;
+}
+#rarely:hover {
+    background-color: #ffb300;
+}
+#rarely:active {
+    background-color: #ffa000;
+    transition: 0s;
+}
+
+/* Never */
+#never {
+    background-color: #F44336;
+}
+#never:hover {
+    background-color: #e13d32;
+}
+#never:active {
+    background-color: #d03a2f;
+    transition: 0s;
+    
+}
+
+#score{
+    height: 40vh;
+    font-size: 1.4rem
+}
